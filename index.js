@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const config = require("./config/config.json");
+require("dotenv").config();
 const fs = require("fs");
 require("colors");
 const client = new Discord.Client({
@@ -47,7 +48,7 @@ fs.readdirSync("./handlers").forEach((handler) => {
 });
 
 client
-  .login(config.token)
+  .login(process.env.token)
   .catch(() =>
     console.log(
       `-[X]- NO HAS ESPECIFICADO UN TOKEN VALIDO O TE FALTAN INTENTOS -[X]-\n [-] ACTIVA LOS INTENTOS EN https://discord.dev [-]`

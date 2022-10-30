@@ -1,12 +1,13 @@
 const mongoose = require("mongoose");
 const config = require("../../config/config.json");
+require("dotenv").config();
 module.exports = (client) => {
   //Nos conectamos a la base de datos
 
   let palo = 53;
 
   mongoose
-    .connect(config.mongodb, {
+    .connect(process.env.mongodb, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })

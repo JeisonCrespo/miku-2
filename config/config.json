@@ -1,7 +1,5 @@
 {
-  "token": "OTQ2NDU4Mjg4ODQ3OTk0OTEx.Gxa5za.KcQvWFSLavPT_sr30E9Ltsl0Tecp-T3Zj-AXTA",
   "prefix": "m!",
-  "mongodb": "mongodb+srv://DiscordBot:H9KCq2n3xSFEhqR5@cluster0.2x8jg.mongodb.net/?retryWrites=true&w=majority",
   "ownerIDS": ["282942681980862474"],
   "color": "#ff0000"
 }
