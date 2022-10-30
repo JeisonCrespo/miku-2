@@ -6,7 +6,7 @@ module.exports = (client) => {
   let palo = 53;
 
   mongoose
-    .connect(process.env.mongodb, {
+    .connect(config.mongodb, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
@@ -38,10 +38,3 @@ module.exports = (client) => {
   console.log(`║ `.green + " ".repeat(-1 + palo - 1) + " ║".green);
   console.log(`╚═════════════════════════════════════════════════════╝`.green);
 };
-
-/*
-╔═════════════════════════════════════════════════════╗
-║    || - || Desarrollado por dewstouh#1088 || - ||   ║
-║    ----------| discord.gg/MBPsvcphGf |----------    ║
-╚═════════════════════════════════════════════════════╝
-*/
