@@ -1,5 +1,8 @@
 const Discord = require("discord.js");
 const config = require("./config/config.json");
+require("http")
+  .createServer((req, res) => res.end("Bot is alive!"))
+  .listen(3000);
 require("dotenv").config();
 const fs = require("fs");
 require("colors");
